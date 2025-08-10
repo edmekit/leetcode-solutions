@@ -32,6 +32,21 @@ uhh ill try to somehow explain my thought process behind my leetcode solutions :
 
 - If not even, then I simply get the middle value by halfing the length then using that in the index.
 
+# Palindrome Number
+
+![prob3](codesnaps/numpalindromeprob.png)
+**I did some unnecessary things here lol.**
+
+**Solution**
+1[num3](codesnaps/numpalindrome.png)
+
+- In order to check if the number is a palindrome, my first thought was to convert it into a string.
+
+- After converting, you can use the ::-1 to reverse strings in python.
+
+- I then check if the reversed is the same as the original, like a palindrome.
+
+- If yes, i return true, if not thenn false. I actually didnt need to write if conditions here and I could just return using == to get true or false lmao my fault.
 
 
 

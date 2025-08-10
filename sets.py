@@ -15,5 +15,11 @@ def merdian(nums1, nums2):
     else:
         return merged_array[length // 2]
 
-
+def isPalindrome(x):
+    word_x = str(x)
+    new_x = word_x[::-1]
+    if new_x == word_x:
+        return True
+    else:
+        return False
 
