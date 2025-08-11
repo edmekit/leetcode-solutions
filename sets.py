@@ -22,4 +22,25 @@ def isPalindrome(x):
         return True
     else:
         return False
+    
+def romanToInt(s):
+    values = {
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000
+            }
+    inte = 0
+    prev = 0
+    for i in reversed(s):
+        value = values[i]
+        if value < prev:
+            inte -= value
+        else:
+            inte += value
+        prev = value                
+    return inte
 

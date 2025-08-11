@@ -38,7 +38,7 @@ uhh ill try to somehow explain my thought process behind my leetcode solutions :
 **I did some unnecessary things here lol.**
 
 **Solution**
-1[num3](codesnaps/numpalindrome.png)
+![num3](codesnaps/numpalindrome.png)
 
 - In order to check if the number is a palindrome, my first thought was to convert it into a string.
 
@@ -47,6 +47,25 @@ uhh ill try to somehow explain my thought process behind my leetcode solutions :
 - I then check if the reversed is the same as the original, like a palindrome.
 
 - If yes, i return true, if not thenn false. I actually didnt need to write if conditions here and I could just return using == to get true or false lmao my fault.
+
+# Roman to Integer
+
+![prob4](codesnaps/romanprob.png)
+**This was actually hard lmao, I stared at my screen for like an hour lol. Roman numerals are quirky because of the minus if the small letter came first.**
+
+**Solution**
+![num4](codesnaps/roman.png)
+
+- I peeked at the clue since I was staring for far too long lmao. It said that its easier to solve if I start solving from the end.
+
+- I used a dictionary since certain numerals has corresponding values in them.
+
+- *inte* variable is for the total while *prev* checks for the case where it minuses instead like IV.
+
+- I first store the corresponding value of the roman to *value* then I check if the previous checked number is larger than the current number, if it is, I minus it to the value.
+
+- If not, then I simply add it to the *inte* then make the current number to be the prev for checking the next number.
+
 
 
 
